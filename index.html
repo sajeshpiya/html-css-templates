@@ -2,12 +2,33 @@
     <head>
         <title>shinchan</title>
     <style>
-    
+    {
+        box-sizing:left;
+    }
+    .column{
+        float: left;
+        width: 35%;
+        padding: 5px;   
+    }
+    .row::after{
+        content: "img/ichan";
+        clear: both;
+        display: table;
+    }
     </style>
     </head>
     <body>
+        <div clss="row">
+            <div class="column">
         <img src="img/shinchan.png" alt="shinchan pyara" style="height: 500px;width: 500px;">
+        </div>
         <p>shinchan as a teacher</p>
+        <div class="column">
         <img src="img/ichan.jpg" alt="I chan" style="height:500px;width:250px;">
+        </div>
+        </div>
+        <iframe width="640" height="480" src="https://www.youtube.com/embed/RI-iMcPcUrw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <a href="https://www.youtube.com/watch?v=RI-iMcPcUrw">watch the episode of shinchan</a>
+        <
     </body>
 </html>
