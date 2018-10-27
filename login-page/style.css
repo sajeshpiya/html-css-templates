@@ -80,8 +80,21 @@ h1{
     border-color: #009879;
 }
 
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
 
+.loginbox a:hover
+{
+    color: #2a26e6e1;
+}
 
+/* Basic Login Box */
+
+/*
 .loginbox input[type="submit"]
 {
     border: none;
@@ -100,24 +113,70 @@ h1{
     color: rgba(255, 255, 255, 0.322);
 }
 
-.loginbox a{
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
+*/
+
+/* Animated CSS Box */
+.loginbox input[type="submit"]{
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 40px;
+    border: 1.5px solid rgba(42, 38, 230, 0.882);
+    font-size: 18px;
+    border-radius: 20px;
+    transition: .6s;
+    overflow: hidden;
 }
 
-.loginbox a:hover
-{
-    color: #2a26e6e1;
-}
 
-.footer{
-    color: rgb(156, 156, 156);
-   }
 
-.footer p{
-    margin-left: 45%;
-    margin-top: 45%;
+.loginbox input[type="submit"]:focus{
+    outline:none;
 
 }
+
+.loginbox input[type="submit"]:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+}
+
+.loginbox input[type="submit"]:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) skewX(-15deg);
+}
+
+.loginbox input[type="submit"]:hover{
+    background: rgba(42, 38, 230, 0.882);
+    cursor: pointer;
+}
+
+.loginbox input[type="submit"]:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.loginbox input[type="submit"]:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
