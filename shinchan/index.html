@@ -1,61 +1,77 @@
 <html>
-    <head>
-        <title>shinchan</title>
-    <style>
-    img{
-        border: 2px solid black;        
-    }
-    .column{
-        float: left;
-        width: 35%;
-        padding: 5px;   
-    }
-    .row::after{
-        content: "img/ichan";
-        clear: both;
-        display: table;
-    }
-    footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100;
-        background-color: black;
-        color:black;
-        text-align: center;
 
-    }    
+<head>
+    <title>shinchan</title>
+    <style>
+        img {
+            border: 2px solid black;
+        }
+
+        .images img {
+            width:400px;
+            height: auto;
+        }
+
+        .column {
+            float: left;
+            width: 35%;
+            padding: 5px;
+        }
+
+        .row::after {
+            content: "img/ichan";
+            clear: both;
+            display: table;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100;
+            background-color: black;
+            color: black;
+            text-align: center;
+
+        }
     </style>
     <div class="shinchan nohara">
         <p>shinchan Nohara</p>
     </div>
-    </head>
-    <body>
+</head>
+
+<body>
 
     <header>
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#video">Video</a>
-        <a href="#images">Images</a>
-    </div>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#video">Video</a>
+            <a href="#images">Images</a>
+        </div>
     </header>
-    <footer> 
+    <footer>
         <div class="nav-item">
-            <a class="nav-link"href="#">go to top</a>
+            <a class="nav-link" href="#">go to top</a>
         </div>
     </footer>
     </article>
-        <div class="row">
-            <div class="column">
-        <img src="img/shinchan.png" alt="shinchan pyara" style="height: 400px;width: 400px;">
+    <div class="row images">
+        <div class="column">
+            <img src="img/shinchan.png" alt="shinchan pyara" >
         </div>
         <!-- <p>shinchan as a teacher</p> -->
         <div>
             <div class="column">
-                <img src="img/ichan.jpg" alt="I chan" style="height:400px;width:400px;">
+                <img src="img/ichan.jpg" alt="I chan" >
             </div>
         </div>
-        <iframe width="480" height="480" src="https://www.youtube.com/watch?v=edGd2WV-Kik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <a href="https://www.youtube.com/watch?v=edGd2WV-Kik">watch the episode of shinchan</a>
-    </body>
+        <div>
+            <div class="column">
+                <img src="img/himawari.jpg" alt="Himawari">
+            </div>
+        </div>
+
+    </div>
+</body>
+
 </html>
